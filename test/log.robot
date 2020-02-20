@@ -21,13 +21,14 @@ FirstSeleniumTestGoogle
 SampleLoginTest
     [Documentation]  This is a simple login test
     Open Browser    https://opensource-demo.orangehrmlive.com  browser=chrome 
-    Set Browser Implicit Wait    5s
+    Set Browser Implicit Wait    5
     Input Text        id=txtUsername    Admin
     Input Password    id=txtPassword    admin123        
     Click Button      id=btnLogin
     Click Element     id=welcome
     Sleep    2s    
-    Click Element     link=logout
+    Click Element     link=Logout
+    Close Browser
     Log               Test Completed    
             
 
