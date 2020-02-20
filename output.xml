@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200219 20:53:16.331" generator="Robot 3.1.2 (Python 2.7.17 on linux2)">
+<suite source="/home/usuario/eclipse-workspace/RobotTest" id="s1" name="RobotTest">
+<suite source="/home/usuario/eclipse-workspace/RobotTest/test" id="s1-s1" name="Test">
+<suite source="/home/usuario/eclipse-workspace/RobotTest/test/log.robot" id="s1-s1-s1" name="Log">
+<test id="s1-s1-s1-t1" name="SampleLoginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://opensource-demo.orangehrmlive.com</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20200219 20:53:16.505" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com'.</msg>
+<status status="PASS" endtime="20200219 20:53:20.963" starttime="20200219 20:53:16.504"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20200219 20:53:20.966" starttime="20200219 20:53:20.964"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20200219 20:53:20.967" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" endtime="20200219 20:53:21.083" starttime="20200219 20:53:20.967"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20200219 20:53:21.084" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20200219 20:53:21.137" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200219 20:53:21.194" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" endtime="20200219 20:53:21.195" starttime="20200219 20:53:21.083"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20200219 20:53:21.196" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" endtime="20200219 20:53:22.281" starttime="20200219 20:53:21.195"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=welcome</arg>
+</arguments>
+<msg timestamp="20200219 20:53:22.284" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" endtime="20200219 20:53:22.393" starttime="20200219 20:53:22.282"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200219 20:53:23.395" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200219 20:53:23.396" starttime="20200219 20:53:22.394"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=logout</arg>
+</arguments>
+<msg timestamp="20200219 20:53:23.398" level="INFO">Clicking element 'link=logout'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200219 20:53:28.645" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200219 20:53:28.645" starttime="20200219 20:53:28.495"></status>
+</kw>
+<msg timestamp="20200219 20:53:28.646" level="FAIL">Element with locator 'link=logout' not found.</msg>
+<status status="FAIL" endtime="20200219 20:53:28.646" starttime="20200219 20:53:23.397"></status>
+</kw>
+<doc>This is a simple login test</doc>
+<status status="FAIL" endtime="20200219 20:53:28.647" critical="yes" starttime="20200219 20:53:16.503">Element with locator 'link=logout' not found.</status>
+</test>
+<status status="FAIL" endtime="20200219 20:53:28.648" starttime="20200219 20:53:16.386"></status>
+</suite>
+<status status="FAIL" endtime="20200219 20:53:28.651" starttime="20200219 20:53:16.383"></status>
+</suite>
+<status status="FAIL" endtime="20200219 20:53:28.653" starttime="20200219 20:53:16.354"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="RobotTest" pass="0">RobotTest</stat>
+<stat fail="1" id="s1-s1" name="Test" pass="0">RobotTest.Test</stat>
+<stat fail="1" id="s1-s1-s1" name="Log" pass="0">RobotTest.Test.Log</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
