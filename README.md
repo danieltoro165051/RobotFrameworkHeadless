@@ -1,4 +1,4 @@
-# test_functional-testing_robot-framework
+# Test Functional with Robot Framework
 Proyecto de estudio y practica de robot framework (Pruebas funcionales)
 
 ## Para ejecutar por linea de comandos
@@ -21,4 +21,13 @@ robot -i sanity -i smoke test/log.robot
 robot -t testname TestSuiteName
 
 robot -t testname1 -t testname2 TestSuiteName
+
+# La configuración del ChromeHeadlees se encuentra:
+
+ # Test Setup
+
+ ![Test Setup](images/ConfHeadlees1.png)
+
+
+
 
