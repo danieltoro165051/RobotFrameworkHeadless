@@ -27,7 +27,22 @@ robot -t testname1 -t testname2 TestSuiteName
  # Test Setup
 
  ![Test Setup](images/ConfHeadlees1.png)
+ 
+ # Chrome Options
+ 
+ ![Chrome Options](images/ConfHeadlees2.png)
+ 
+ # Test Case "Go To Google"
 
+ ![TestCase](images/ConfHeadlees3.png)
 
-
-
+ # Ejecución por linea de comandos (Se debe tener en cuenta la ruta en donde se descargue el proyecto)
+ 
+ ![CommandLine](CommandLine.png)
+ 
+ # Reporte Log (Tener en cuenta que se ejecutó con el setup de ChromeHeadlees)
+ 
+ ![Log](report.png)
+ 
+ La configuracion del ChromeHeadless se hizo basado en la siguiente documentacion: [Documentación](https://gist.github.com/b4oshany/18b0b84524a5ba9c853fb179b522780b)
+ 
