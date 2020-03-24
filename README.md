@@ -38,11 +38,11 @@ robot -t testname1 -t testname2 TestSuiteName
 
  # Ejecución por linea de comandos (Se debe tener en cuenta la ruta en donde se descargue el proyecto)
  
- ![CommandLine](CommandLine.png)
+ ![CommandLine](images/CommandLine.png)
  
  # Reporte Log (Tener en cuenta que se ejecutó con el setup de ChromeHeadlees)
  
- ![Log](report.png)
+ ![Log](images/report.png)
  
  La configuracion del ChromeHeadless se hizo basado en la siguiente documentacion: [Documentación](https://gist.github.com/b4oshany/18b0b84524a5ba9c853fb179b522780b)
  
