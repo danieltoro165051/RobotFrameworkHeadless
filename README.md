@@ -30,7 +30,8 @@ robot -t testname1 -t testname2 TestSuiteName
  
  # Chrome Options
  
- ![Chrome Options](images/ConfHeadlees2.png)
+ ![ChromeOptions](images/ConfHeadless2.png)
+ 
  
  # Test Case "Go To Google"
 
