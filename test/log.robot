@@ -49,7 +49,7 @@ SampleLoginTest
 
 Go To Google
     Go To                https://google.com
-    Log                  Estoy en Google Chrome sin cabecera
+    Log                  Estoy en Google Chrome modo Headless
     Set Browser Implicit Wait    5
     Input Text        name=q         DevSecOps
     Log               Test Completed
