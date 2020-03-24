@@ -35,7 +35,7 @@ robot -t testname1 -t testname2 TestSuiteName
  
  # Test Case "Go To Google"
 
- ![TestCase](images/ConfHeadlees3.png)
+ ![TestCase](images/ConfHeadless3.png)
 
  # Ejecución por linea de comandos (Se debe tener en cuenta la ruta en donde se descargue el proyecto)
  
