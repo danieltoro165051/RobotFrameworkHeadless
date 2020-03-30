@@ -1,11 +1,50 @@
 # Test Functional with Robot Framework
 Proyecto de estudio y practica de robot framework (Pruebas funcionales)
 
-## Para ejecutar por linea de comandos
+
+Aprovisionamiento de Robot Framework
+
+## 1. Instalar Python Segun la version de Robot framework a Utilizar
+
+(En este caso se utilizará Python 2.7 y Robot FRamework 3.0)
+
+![VersionRF-VersionPython](images/FRvsPython.png)
+
+En Windows se debe agregar el ejecutable de Python como variable de ambiente
+En Linux debe estar en la ruta /usr/bin/
+
+## 2. Instalar Pip 
+
+
+## 3. Instalar Robot Framework desde Pip
+ 
+ Instala la última versión de robotframework
+
+    pip install robotframework
+    
+ Instalar una versión específica
+
+    pip install robotframework==3.0
+    
+## Verificacion de la configuracion de Python y Robot Framwork
+
+ ![ValidateConf](images/conf.png)
+    
+## 4. Chrome Driver
+
+El proyecto esta configurado para ejecutarse bajo ChromeHeadlees y obtener el chrome driver en el siguiente setup (OpenChromeHeadless)
+
+ ![ChromeDriver](images/executableChromeDriver.png)
+ 
+## 5. Test Cases
+
+![TestCase](images/TestCases.png)
+
+## Ejecución por linea de comandos
 
 En la ruta del proyecto
 
-robot -t MyFirstTestCaseLog test/Log.robot
+ robot -t MyFirstTestCaseLog test/Log.robot
 
 
 ## Etiquetas 
