@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200330 16:12:35.822" generator="Robot 3.1.2 (Python 2.7.17 on linux2)">
-<suite source="/home/usuario/eclipse-workspace/RobotTest/test/log.robot" id="s1" name="Log">
+<robot rpa="false" generated="20200330 16:54:38.671" generator="Robot 3.1.2 (Python 2.7.17 on linux2)">
+<suite source="/home/usuario/eclipse-workspace/RobotTest" id="s1" name="RobotTest">
+<suite source="/home/usuario/eclipse-workspace/RobotTest/test" id="s1-s1" name="Test">
+<suite source="/home/usuario/eclipse-workspace/RobotTest/test/log.robot" id="s1-s1-s1" name="Log">
 <kw type="setup" name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>I am in a Suite Setup</arg>
 </arguments>
-<msg timestamp="20200330 16:12:35.955" level="INFO">I am in a Suite Setup</msg>
-<status status="PASS" endtime="20200330 16:12:35.955" starttime="20200330 16:12:35.955"></status>
+<msg timestamp="20200330 16:54:38.951" level="INFO">I am in a Suite Setup</msg>
+<status status="PASS" endtime="20200330 16:54:38.951" starttime="20200330 16:54:38.950"></status>
 </kw>
-<test id="s1-t1" name="MyFirstTestCaseLog">
+<test id="s1-s1-s1-t1" name="Go To Google">
 <kw type="setup" name="OpenChromeHeadless">
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -20,8 +22,8 @@
 <assign>
 <var>${chrome_options}</var>
 </assign>
-<msg timestamp="20200330 16:12:35.956" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f74b8771350&gt;</msg>
-<status status="PASS" endtime="20200330 16:12:35.956" starttime="20200330 16:12:35.956"></status>
+<msg timestamp="20200330 16:54:38.956" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f0f387bf050&gt;</msg>
+<status status="PASS" endtime="20200330 16:54:38.957" starttime="20200330 16:54:38.956"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -30,7 +32,7 @@
 <arg>add_argument</arg>
 <arg>--disable-extensions</arg>
 </arguments>
-<status status="PASS" endtime="20200330 16:12:35.957" starttime="20200330 16:12:35.957"></status>
+<status status="PASS" endtime="20200330 16:54:38.958" starttime="20200330 16:54:38.957"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -39,7 +41,7 @@
 <arg>add_argument</arg>
 <arg>--headless</arg>
 </arguments>
-<status status="PASS" endtime="20200330 16:12:35.957" starttime="20200330 16:12:35.957"></status>
+<status status="PASS" endtime="20200330 16:54:38.959" starttime="20200330 16:54:38.958"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -48,7 +50,7 @@
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 </arguments>
-<status status="PASS" endtime="20200330 16:12:35.957" starttime="20200330 16:12:35.957"></status>
+<status status="PASS" endtime="20200330 16:54:38.960" starttime="20200330 16:54:38.959"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -57,66 +59,86 @@
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 </arguments>
-<status status="PASS" endtime="20200330 16:12:35.958" starttime="20200330 16:12:35.957"></status>
+<status status="PASS" endtime="20200330 16:54:38.961" starttime="20200330 16:54:38.960"></status>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <doc>Creates an instance of Selenium WebDriver.</doc>
 <arguments>
 <arg>Chrome</arg>
 <arg>chrome_options=${chrome_options}</arg>
-<arg>executable_path=/usr/bin/chromedriver</arg>
+<arg>executable_path=./drivers/chromedriver</arg>
 </arguments>
-<msg timestamp="20200330 16:12:35.958" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" endtime="20200330 16:12:37.052" starttime="20200330 16:12:35.958"></status>
+<msg timestamp="20200330 16:54:38.962" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" endtime="20200330 16:54:40.217" starttime="20200330 16:54:38.961"></status>
 </kw>
-<status status="PASS" endtime="20200330 16:12:37.052" starttime="20200330 16:12:35.956"></status>
+<status status="PASS" endtime="20200330 16:54:40.218" starttime="20200330 16:54:38.955"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://google.com</arg>
+</arguments>
+<msg timestamp="20200330 16:54:40.219" level="INFO">Opening url 'https://google.com'</msg>
+<status status="PASS" endtime="20200330 16:54:44.613" starttime="20200330 16:54:40.218"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>Hola Mundo 1</arg>
+<arg>Estoy en Google Chrome modo Headless</arg>
 </arguments>
-<msg timestamp="20200330 16:12:37.053" level="INFO">Hola Mundo 1</msg>
-<status status="PASS" endtime="20200330 16:12:37.053" starttime="20200330 16:12:37.053"></status>
+<msg timestamp="20200330 16:54:44.617" level="INFO">Estoy en Google Chrome modo Headless</msg>
+<status status="PASS" endtime="20200330 16:54:44.617" starttime="20200330 16:54:44.613"></status>
 </kw>
-<kw name="Set Tags" library="BuiltIn">
-<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
-<arg>TagForFirstTestCase</arg>
+<arg>5</arg>
 </arguments>
-<msg timestamp="20200330 16:12:37.054" level="INFO">Set tag 'TagForFirstTestCase'.</msg>
-<status status="PASS" endtime="20200330 16:12:37.054" starttime="20200330 16:12:37.053"></status>
+<status status="PASS" endtime="20200330 16:54:44.619" starttime="20200330 16:54:44.617"></status>
 </kw>
-<kw name="Remove Tags" library="BuiltIn">
-<doc>Removes given ``tags`` from the current test or all tests in a suite.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
-<arg>TagForFirstTestCase</arg>
+<arg>name=q</arg>
+<arg>DevSecOps</arg>
 </arguments>
-<msg timestamp="20200330 16:12:37.055" level="INFO">Removed tag 'TagForFirstTestCase'.</msg>
-<status status="PASS" endtime="20200330 16:12:37.055" starttime="20200330 16:12:37.054"></status>
+<msg timestamp="20200330 16:54:44.620" level="INFO">Typing text 'DevSecOps' into text field 'name=q'.</msg>
+<status status="PASS" endtime="20200330 16:54:44.776" starttime="20200330 16:54:44.619"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20200330 16:54:44.776" level="INFO">Test Completed</msg>
+<status status="PASS" endtime="20200330 16:54:44.777" starttime="20200330 16:54:44.776"></status>
 </kw>
 <kw type="teardown" name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>I am in a Test Teardown</arg>
 </arguments>
-<msg timestamp="20200330 16:12:37.055" level="INFO">I am in a Test Teardown</msg>
-<status status="PASS" endtime="20200330 16:12:37.056" starttime="20200330 16:12:37.055"></status>
+<msg timestamp="20200330 16:54:44.777" level="INFO">I am in a Test Teardown</msg>
+<status status="PASS" endtime="20200330 16:54:44.777" starttime="20200330 16:54:44.777"></status>
 </kw>
 <tags>
 <tag>TagDefault</tag>
 </tags>
-<status status="PASS" endtime="20200330 16:12:37.056" critical="yes" starttime="20200330 16:12:35.956"></status>
+<status status="PASS" endtime="20200330 16:54:44.778" critical="yes" starttime="20200330 16:54:38.952"></status>
 </test>
 <kw type="teardown" name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>I am in a Suite Teardown</arg>
 </arguments>
-<msg timestamp="20200330 16:12:37.057" level="INFO">I am in a Suite Teardown</msg>
-<status status="PASS" endtime="20200330 16:12:37.057" starttime="20200330 16:12:37.057"></status>
+<msg timestamp="20200330 16:54:44.779" level="INFO">I am in a Suite Teardown</msg>
+<status status="PASS" endtime="20200330 16:54:44.779" starttime="20200330 16:54:44.779"></status>
 </kw>
-<status status="PASS" endtime="20200330 16:12:37.057" starttime="20200330 16:12:35.823"></status>
+<status status="PASS" endtime="20200330 16:54:44.779" starttime="20200330 16:54:38.826"></status>
+</suite>
+<status status="PASS" endtime="20200330 16:54:44.781" starttime="20200330 16:54:38.822"></status>
+</suite>
+<status status="PASS" endtime="20200330 16:54:44.783" starttime="20200330 16:54:38.780"></status>
 </suite>
 <statistics>
 <total>
@@ -127,7 +149,9 @@
 <stat fail="0" pass="1">TagDefault</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Log" pass="1">Log</stat>
+<stat fail="0" id="s1" name="RobotTest" pass="1">RobotTest</stat>
+<stat fail="0" id="s1-s1" name="Test" pass="1">RobotTest.Test</stat>
+<stat fail="0" id="s1-s1-s1" name="Log" pass="1">RobotTest.Test.Log</stat>
 </suite>
 </statistics>
 <errors>

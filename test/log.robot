@@ -75,7 +75,8 @@ OpenChromeHeadless
     Call Method    ${chrome_options}    add_argument    --headless
     Call Method    ${chrome_options}    add_argument    --disable-gpu
     Call Method    ${chrome_options}    add_argument    --no-sandbox
-    Create Webdriver    Chrome    chrome_options=${chrome_options}  executable_path=/usr/bin/chromedriver
+    #Create Webdriver    Chrome    chrome_options=${chrome_options}  executable_path=/usr/bin/chromedriver
+    Create Webdriver    Chrome    chrome_options=${chrome_options}  executable_path=./drivers/chromedriver
     #Set Window Size  1024  768
     #Go To    ${url}
     #Log  Estoy en Google Chrome sin cabecera
