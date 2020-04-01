@@ -40,6 +40,16 @@ El proyecto esta configurado para ejecutarse bajo ChromeHeadlees y obtener el ch
 
 ![TestCase](images/TestCases.png)
 
+## 6 En ambiente Linux es posible que se necesite instalar Chrome Driver
+
+Debido al siguiente error:
+
+WebDriverException: Message: Service chromedriver unexpectedly exited. Status code was: 127
+
+   sudo apt-get install -y chromium-browser
+   
+ Referencia: [Documentación](https://stackoverflow.com/questions/49323099/webdriverexception-message-service-chromedriver-unexpectedly-exited-status-co)
+
 ## Ejecución por linea de comandos
 
 En la ruta del proyecto
